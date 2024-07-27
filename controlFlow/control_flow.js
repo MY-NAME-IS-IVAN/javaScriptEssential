@@ -7,6 +7,9 @@ let userMessage;
 let userType = "subscriber";
 let userCategory;
 
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
 if (isLoggedIn) {
     if (userRole === "admin") {
         userMessage = "Welcome, Admin!";
@@ -34,3 +37,4 @@ switch (userType) {
 console.log("Access Level:", accessLevel);
 console.log("User Message:", userMessage);
 console.log("User Category:", userCategory);
+console.log("Authentication Status:", authenticationStatus);
